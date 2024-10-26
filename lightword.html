@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Word</title>
+    <link rel="stylesheet" href="lightword.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    }
+h2{
+    position: relative;
+    font-size: 6em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 1s linear infinite;
+
+}
+@keyframes animate
+{
+    0%{
+    color : #ff7b00;
+    }
+    20%{
+        color : rgb(253, 237, 4);
+    }
+    40%{
+        color : hsl(192, 100%, 52%);
+        }
+        60%{
+            color : #ff00bf;
+            }
+            80%{
+                color : #4400ff;
+                }
+    100%{
+        color : #0bf117;
+        }
+    
+   
+}
+
+    </style>
+</head>
+<body>
+    <h2 contenteditable="true">Text</h2>
+</body>
+</html>
